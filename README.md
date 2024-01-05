@@ -10,7 +10,6 @@ sudo ip netns exec ns0 bash
 ping 8.8.8.8 -c 5
 ```
 
- 
 Okay, it does not seem that the network is unreachable. It's something else. Maybe somewhere, packets have stuck. Let's dig it out. We can do it using the Linux utility `tcpdump`. We will check two interfaces. One is `br0`, and the other is `ens3` (in the case of my device).
  
 
