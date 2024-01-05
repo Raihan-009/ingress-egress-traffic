@@ -49,7 +49,7 @@ sudo iptables --append FORWARD --in-interface br0 --jump ACCEPT
 sudo iptables --append FORWARD --out-interface br0 --jump ACCEPT
 ```
 
-These rules enabled traffic to travel across the v-net virtual bridge.These are useful to allow all traffic to pass through the v-net interface without any restrictions.However, keep in mind that using such rules without any filtering can expose your system to potential security risks. But for now we re good to ping!
+These rules enabled traffic to travel across the br0 virtual bridge.These are useful to allow all traffic to pass through the br0 interface without any restrictions. However, keep in mind that using such rules without any filtering can expose your system to potential security risks. But for now we re good to ping!
 
 ## `Test Connectivity`
 
